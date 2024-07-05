@@ -1,0 +1,18 @@
+#+title: tree-sitter-dale
+
+A tree-sitter grammar for [[https://github.com/tomhrr/dale][dale]].
+
+This project is very mature. Though it is plenty usable, expect bugs and holes.
+
+* to-do list
+** TODO incorrect conflict handling
+   the string "trueish" is incorrectly parsed as a boolean followed by the
+   symbol "ish"
+** TODO expoential notation
+   e.g. "0.123e56"
+
+* References
+  - This project's code is almost entirely based off
+    [[https://github.com/6cdh/tree-sitter-scheme][tree-sitter-scheme]]'s.
+  - [[https://github.com/tomhrr/dale][Dale's documentation]].
+

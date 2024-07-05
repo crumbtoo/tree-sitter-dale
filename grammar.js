@@ -1,8 +1,6 @@
 /// <reference types="tree-sitter-cli/dsl" />
 // @ts-check
 
-// TODO: the string "trueish" is incorrectly parsed as a boolean followed by the
-// symbol "ish".
 const whitespace = /[ \r\n\t\f\v\p{Zs}\p{Zl}\p{Zp}]/
 
 module.exports = grammar
@@ -33,8 +31,6 @@ module.exports = grammar
                           )
      , boolean: $ => choice("true", "false")
 
-     // TODO: exponential notation.
-     // TODO: 0x123.456 shouldn't be valid.
      , number: $ => choice( /-?0x[0-9a-fA-F]+/
                           , /-?\d+(\.\d+)?/ )
 
