@@ -28,6 +28,10 @@
  (#any-of? @keyword.conditional
    "if" "when" "unless"))
 
+((symbol) @keyword.function
+ (#eq? @keyword.function
+   "fn"))
+
 ((symbol) @keyword.ternary
  (#any-of? @keyword.ternary
    "?"))
