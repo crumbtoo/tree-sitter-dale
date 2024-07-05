@@ -4,7 +4,9 @@
 (character) @character
 (boolean) @booleans
 (symbol) @variable
+;; TODO: highlight "TODO", "FIXME", etc. comments
 (comment) @comment
+(block_comment) @comment
 (string) @string
 
 ;; the first element of a list is a function.
