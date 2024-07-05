@@ -85,3 +85,9 @@
   (#any-of? @keyword.import
    "include" "import"))
 
+(list
+  . (symbol) @_def_variant
+  (list
+    (list . (symbol) @constructor))
+  (#eq? @_def_variant "def-variant"))
+
