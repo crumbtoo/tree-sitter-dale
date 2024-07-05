@@ -45,7 +45,7 @@
 
 ((symbol) @keyword.type
  (#any-of? @keyword.type
-   "struct" "def-invariant"))
+   "struct" "def-variant"))
 
 ((symbol) @keyword.modifier
  (#any-of? @keyword.modifier
