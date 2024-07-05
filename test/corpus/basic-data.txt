@@ -1,0 +1,135 @@
+=======
+Symbols
+=======
+
+cool-identifier
+abc123
+xyz3?
+*23232*
+aawew!?!n-=32nwea
+trueish
+truefalse
+falseish
+
+---
+
+(source_file
+  (symbol)
+  (symbol)
+  (symbol)
+  (symbol)
+  (symbol))
+
+=====================
+Malformed identifiers
+:error
+=====================
+
+123cb
+3x-e=
+
+---
+
+(source_file
+  (symbol)
+  (symbol))
+
+================
+Integer literals
+================
+
+123
+0x4f3E
+0xaBcD
+-0xabcdef
+-123
+
+---
+
+(source_file
+  (number)
+  (number)
+  (number)
+  (number)
+  (number))
+
+==============
+Float literals
+==============
+
+123.456
+-123.456
+-0.456
+
+---
+
+(source_file
+  (number)
+  (number)
+  (number))
+
+==================
+Character literals
+==================
+
+#\a
+#\SPACE
+#\SPACE
+#\TAB
+#\NEWLINE
+#\CARRIAGE
+#\NULL
+#\EOF
+
+---
+
+(source_file
+  (character)
+  (character)
+  (character)
+  (character)
+  (character)
+  (character)
+  (character)
+  (character))
+
+===============
+String literals
+===============
+
+"doge soge qoge"
+"doge \" qoge"
+"doge \\\" qoge"
+
+---
+
+(source_file
+  (string)
+  (string)
+  (string))
+
+=====
+Lists
+=====
+
+(a b c)
+
+(f (x y z) 123 blah)
+
+---
+
+(source_file
+  (list
+    (symbol)
+    (symbol)
+    (symbol))
+
+  (list
+    (symbol)
+    (list
+      (symbol)
+      (symbol)
+      (symbol))
+    (number)
+    (symbol)))
+

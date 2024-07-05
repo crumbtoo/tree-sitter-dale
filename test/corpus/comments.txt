@@ -1,0 +1,35 @@
+=============
+Line comments
+=============
+
+; doge soge quoge
+
+---
+
+(source_file
+  (comment))
+
+==============
+Block comments
+==============
+
+#| doge soge quoge |#
+
+---
+
+(source_file
+  (block_comment))
+
+=========================
+Nested block comments
+=========================
+
+#| doge
+   #| soge quoge |#
+   boge |#
+
+---
+
+(source_file
+  (block_comment (block_comment)))
+
