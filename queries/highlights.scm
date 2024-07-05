@@ -27,7 +27,8 @@
 
 ((symbol) @keyword
  (#any-of? @keyword
-   "def"))
+   "def" "do"
+   "setf" "setv"))
 
 ((symbol) @keyword.conditional
  (#any-of? @keyword.conditional
