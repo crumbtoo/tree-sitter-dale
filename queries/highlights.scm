@@ -59,6 +59,7 @@
 
 ((symbol) @keyword.modifier
  (#any-of? @keyword.modifier
+   "inline"
    "const"
    "intern" "extern" "extern-c" "opaque"))
 
